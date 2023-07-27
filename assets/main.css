@@ -12,6 +12,10 @@ body{
     animation: animate 3s ease;
 }
 
+.carouselSection *{
+    animation: animate1 3s ease !important;
+}
+
 @keyframes animate {
     from {
         transform: translateY(400px);

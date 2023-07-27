@@ -193,7 +193,7 @@
         </div>
       </section>
 
-      <section class="flex items-center min-h-[25vh]">
+      <section class="carouselSection flex items-center min-h-[25vh]">
         <div
           id="default-carousel"
           class="relative w-full"
