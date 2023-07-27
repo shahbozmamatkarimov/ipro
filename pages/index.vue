@@ -2096,5 +2096,19 @@ onMounted(() => {
   window.addEventListener("resize", () => {
     store.height = window.innerHeight;
   });
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= store.height * 3 + store.height / 3) {
+      store.page = 4;
+    } else if (window.scrollY >= store.height * 2 + store.height / 3) {
+      store.page = 3;
+    } else if (window.scrollY >= store.height + store.height / 3) {
+      store.page = 2;
+    } else if (window.scrollY >= store.height - store.height / 3) {
+      store.page = 1;
+    } else {
+      store.page = 0;
+    }
+  });
 });
 </script>
