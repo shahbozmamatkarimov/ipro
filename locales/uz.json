@@ -1,0 +1,45 @@
+{
+  "language": "Til",
+  "uz": "Uzbekcha",
+  "ru": "Ruscha",
+  "en": "Inglizcha",
+  "navbar": {
+    "home": "Asosiy",
+    "social": "Ijtimoiy",
+    "projects": "Loyihalar",
+    "staff": "Xodimlar",
+    "price": "Narxlar",
+    "login": "Kirish"
+  },
+  "homepage": {
+    "title": "IPRO yordamida chiroyli va qulay veb-saytingizni yarating.",
+    "description": "O'zbekchaga tarjima qilib bo'lmadi 😅",
+    "hire": "Hoziroq yollash",
+    "show": "Ishchilarni ko'rish"
+  },
+  "projects":{
+    "projects": "Loyihalar",
+    "web_design": "Web dezayner",
+    "app_design": "App dezayner",
+    "brending": "Brending",
+    "animation": "Animatsiya"
+  },
+  "staff": {
+    "title": "Bizning ijodiy jamoamiz",
+    "description": "O'zbekchaga tarjima qilib bo'lmadi 😅"
+  },
+  "pricing": {
+    "title": "Narxlar rejalari",
+    "title1": "Mukammal shaxslar yoki startaplar",
+    "title2": "12 kishigacha bo'lgan jamoalar uchun juda mos keladi",
+    "title3": "Mukammal keng ko'lamli jamoa",
+    "description": "Bizni ishga olish uchun quyidagi tariflardan birini tanlang",
+    "month": "oy",
+    "hour": "soatlab qo'llab-quvvatlash",
+    "storage": "xotira",
+    "bandwith": "tarmoq kengligi",
+    "subdomen": "Subdomen kiritilgan",
+    "domen": "Domen kiritilgan",
+    "choose": "Tanlash"
+  }
+}

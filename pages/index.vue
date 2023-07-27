@@ -15,8 +15,17 @@
           <router-link
             to="/login"
             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            >Log in</router-link
+            >{{ $t("navbar.login") }}</router-link
           >
+          
+        <form class="mr-2">
+          <select v-model="$i18n.locale" id="countries" class="bg-gray-50 ml-1 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option class="bg-black" value="uz">{{ $t("uz") }}</option>
+            <option class="bg-black" value="ru">{{ $t("ru") }}</option>
+            <option class="bg-black" value="en">{{ $t("en") }}</option>
+          </select>
+        </form>
+
           <button
             @click="store.menu = !store.menu"
             type="button"
@@ -69,7 +78,7 @@
                 class="block cursor-pointer py-2 pr-4 pl-3 rounded lg:p-0"
                 aria-current="page"
               >
-                Home
+              {{ $t("navbar.home") }}
               </p>
             </li>
             <li>
@@ -84,7 +93,7 @@
                 "
                 class="block cursor-pointer py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Social
+              {{ $t("navbar.social") }}
               </p>
             </li>
             <li>
@@ -99,7 +108,7 @@
                 "
                 class="block cursor-pointer py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Projects
+              {{ $t("navbar.projects") }}
               </p>
             </li>
             <li>
@@ -114,7 +123,7 @@
                 "
                 class="block cursor-pointer py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Staff
+              {{ $t("navbar.staff") }}
               </p>
             </li>
             <li>
@@ -129,7 +138,7 @@
                 "
                 class="block cursor-pointer py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Price
+              {{ $t("navbar.price") }}
               </p>
             </li>
           </ul>
@@ -148,21 +157,18 @@
             <h1
               class="max-w-2xl mb-4 sm:text-3xl text-2xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white"
             >
-              Create your beautiful website with <i>IPRO</i>.
+            {{ $t("homepage.title") }}
             </h1>
             <p
               class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 sm:text-md text-sm md:text-lg lg:text-xl dark:text-gray-400"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              provident ab quasi sed in mollitia sint officiis assumenda vitae
-              nisi dignissimos ipsa odit debitis deleniti autem, dolore ex rem
-              recusandae!
+            {{ $t("homepage.description") }}
             </p>
             <a
               href="#"
               class="inline-flex items-center justify-center sm:px-5 px-3 sm:py-3 py-2 mr-3 md:text-base text-sm font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
-              Hire now
+            {{ $t("homepage.hire") }}
               <svg
                 class="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
@@ -180,7 +186,7 @@
               href="#"
               class="inline-flex items-center justify-center sm:px-5 px-3 sm:py-3 py-2 sm:text-base text-sm font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
             >
-              Show workers
+            {{ $t("homepage.show") }}
             </a>
           </div>
           <div class="lg:col-span-5 flex rounded overflow-hidden">
@@ -333,7 +339,7 @@
           <h1
             class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-4xl"
           >
-            Projects
+          {{ $t("projects.projects") }}
           </h1>
 
           <div class="lg:-mx-12 lg:flex">
@@ -344,22 +350,22 @@
                 <p
                   class="block whitespace-nowrap text-blue-500 hover:underline dark:text-blue-400"
                 >
-                  Web design
+                {{ $t("projects.web_design") }}
                 </p>
                 <p
                   class="block whitespace-nowrap text-gray-500 hover:underline dark:text-gray-300"
                 >
-                  App design
+                {{ $t("projects.app_design") }}
                 </p>
                 <p
                   class="block whitespace-nowrap text-gray-500 hover:underline dark:text-gray-300"
                 >
-                  Branding
+                {{ $t("projects.brending") }}
                 </p>
                 <p
                   class="block whitespace-nowrap text-gray-500 hover:underline dark:text-gray-300"
                 >
-                  Animation
+                {{ $t("projects.animation") }}
                 </p>
               </div>
             </div>
@@ -450,13 +456,11 @@
           <h1
             class="text-2xl mt-16 font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl"
           >
-            Our Creative Team
+            {{ $t("staff.title") }}
           </h1>
 
           <p class="my-6 max-w-2xl text-gray-500 dark:text-gray-300">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ipsam
-            commodi hic quod, dolore quaerat ipsum, delectus deserunt possimus
-            nulla quam dolorem eum obcaecati.
+            {{ $t("staff.description") }}
           </p>
 
           <div class="flex overflow-hidden overflow-x-auto mt-8 gap-8 xl:mt-16">
@@ -998,9 +1002,9 @@
           <div class="container mx-auto">
             <div>
               <div id="title" class="mb-5 mt-24">
-                <h1 class="font-bold text-4xl text-gray-800">Pricing Plans</h1>
+                <h1 class="font-bold text-4xl text-gray-800">{{ $t("pricing.title") }}</h1>
                 <p class="text-gray-500 text-xl">
-                  Choose one of the rates below to hire us
+                  {{ $t("pricing.description") }}
                 </p>
               </div>
               <div
@@ -1013,7 +1017,7 @@
                   <div id="title" class="w-full py-5 border-b border-gray-800">
                     <h2 class="font-bold text-3xl text-white">Startup</h2>
                     <h3 class="font-normal text-indigo-500 text-xl mt-2">
-                      $9<sup>,99</sup>/month
+                      $9<sup>,99</sup>/{{ $t("pricing.month") }}
                     </h3>
                   </div>
                   <div id="content" class="">
@@ -1033,7 +1037,7 @@
                         />
                       </svg>
                       <p class="text-gray-500 text-sm pt-2">
-                        Perfect individuals or startups
+                        {{ $t("pricing.title1") }}
                       </p>
                     </div>
                     <div
@@ -1041,16 +1045,16 @@
                       class="leading-8 mb-10 text-lg font-light"
                     >
                       <ul>
-                        <li>10 hours of support</li>
-                        <li>128MB of storage</li>
-                        <li>2048MB bandwith</li>
-                        <li>Subdomain included</li>
+                        <li>10 <span>{{ $t("pricing.hour") }}</span></li>
+                        <li>128MB <span>{{ $t("pricing.storage") }}</span></li>
+                        <li>2048MB <span>{{ $t("pricing.bandwith") }}</span></li>
+                        <li>{{ $t("pricing.subdomen") }}</li>
                       </ul>
                       <div id="choose" class="w-full mt-10 px-6">
                         <a
                           href="#"
                           class="w-full block bg-gray-900 font-medium text-xl py-4 rounded-xl hover:shadow-lg transition duration-200 ease-in-out hover:bg-indigo-600 hover:text-white"
-                          >Choose</a
+                          >{{ $t("pricing.choose") }}</a
                         >
                       </div>
                     </div>
@@ -1063,7 +1067,7 @@
                   <div id="title" class="w-full py-5 border-b border-gray-800">
                     <h2 class="font-bold text-3xl text-white">Corporate</h2>
                     <h3 class="font-normal text-indigo-500 text-xl mt-2">
-                      $12<sup>,99</sup>/month
+                      $12<sup>,99</sup>/{{ $t("pricing.month") }}
                     </h3>
                   </div>
                   <div id="content" class="">
@@ -1083,7 +1087,7 @@
                         />
                       </svg>
                       <p class="text-gray-500 text-sm pt-2">
-                        Perfect for teams up to 12 people
+                        {{ $t("pricing.title2") }}
                       </p>
                     </div>
                     <div
@@ -1091,16 +1095,16 @@
                       class="leading-8 mb-10 text-lg font-light"
                     >
                       <ul>
-                        <li>10 hours of support</li>
-                        <li>1024MB of storage</li>
-                        <li>4GB bandwith</li>
-                        <li>Domain included</li>
+                        <li>10 <span>{{ $t("pricing.hour") }}</span></li>
+                        <li>1024MB <span>{{ $t("pricing.storage") }}</span></li>
+                        <li>4GB <span>{{ $t("pricing.bandwith") }}</span></li>
+                        <li>{{ $t("pricing.domen") }}</li>
                       </ul>
                       <div id="choose" class="w-full mt-10 px-6">
                         <a
                           href="#"
                           class="w-full block bg-gray-900 font-medium text-xl py-4 rounded-xl hover:shadow-lg transition duration-200 ease-in-out hover:bg-indigo-600 hover:text-white"
-                          >Choose</a
+                          >{{ $t("pricing.choose") }}</a
                         >
                       </div>
                     </div>
@@ -1113,7 +1117,7 @@
                   <div id="title" class="w-full py-5 border-b border-gray-800">
                     <h2 class="font-bold text-3xl text-white">Enterprise</h2>
                     <h3 class="font-normal text-indigo-500 text-xl mt-2">
-                      $19<sup>,99</sup>/month
+                      $19<sup>,99</sup>/{{ $t("pricing.month") }}
                     </h3>
                   </div>
                   <div id="content" class="">
@@ -1133,7 +1137,7 @@
                         />
                       </svg>
                       <p class="text-gray-500 text-sm pt-2">
-                        Perfect large scale team
+                        {{ $t("pricing.title3") }}
                       </p>
                     </div>
                     <div
@@ -1141,16 +1145,16 @@
                       class="leading-8 mb-10 text-lg font-light"
                     >
                       <ul>
-                        <li>10 hours of support</li>
-                        <li>10GB of storage</li>
-                        <li>100GB bandwith</li>
-                        <li>Domain included</li>
+                        <li>10 <span>{{ $t("pricing.hour") }}</span></li>
+                        <li>10GB <span>{{ $t("pricing.storage") }}</span></li>
+                        <li>100GB <span>{{ $t("pricing.bandwith") }}</span></li>
+                        <li>{{ $t("pricing.domen") }}</li>
                       </ul>
                       <div id="choose" class="w-full mt-10 px-6">
                         <a
                           href="#"
                           class="w-full block bg-gray-900 font-medium text-xl py-4 rounded-xl hover:shadow-lg transition duration-200 ease-in-out hover:bg-indigo-600 hover:text-white"
-                          >Choose</a
+                          >{{ $t("pricing.choose") }}</a
                         >
                       </div>
                     </div>
@@ -2073,6 +2077,7 @@ const store = reactive({
   height: 0,
   page: 0,
   menu: false,
+  language: 'en'
 });
 
 function scrollFunc(page) {

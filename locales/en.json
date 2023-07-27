@@ -1,0 +1,45 @@
+{
+  "language": "Language",
+  "uz": "Uzbek",
+  "ru": "Russian",
+  "en": "English",
+  "navbar": {
+    "home": "Home",
+    "social": "Social",
+    "projects": "Projects",
+    "staff": "Staff",
+    "price": "Price",
+    "login": "Log in"
+  },
+  "homepage": {
+    "title": "Create your beautiful website with IPRO.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident ab quasi sed in mollitia sint officiis assumenda vitae nisi dignissimos ipsa odit debitis deleniti autem, dolore ex rem recusandae!",
+    "hire": "Hire now",
+    "show": "Show workers"
+  },
+  "projects":{
+    "projects": "Projects",
+    "web_design": "Web design",
+    "app_design": "App design",
+    "brending": "Brending",
+    "animation": "Animation"
+  },
+  "staff": {
+    "title": "Our Creative Team",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ipsam commodi hic quod, dolore quaerat ipsum, delectus deserunt possimus nulla quam dolorem eum obcaecati."
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "title1": "Perfect individuals or startups",
+    "title2": "Perfect for teams up to 12 people",
+    "title3": "Perfect large scale team",
+    "description": "Choose one of the rates below to hire us",
+    "month": "month",
+    "hour": "hours of support",
+    "storage": "of storage",
+    "bandwith": "bandwith",
+    "subdomen": "Subdomain included",
+    "domen": "Domain included",
+    "choose": "Choose"
+  }
+}
